@@ -1,0 +1,59 @@
+@import compass
+@import compass/reset
+
+body
+  background-color: black
+
+div.container
+  background-image:url('images/wood_background.png');
+  margin: 0px auto
+  width: 960px
+  height: 1000px
+
+a.cell
+  margin: 55px 35px
+  height: 85px
+  width: 125px
+  float: left
+  display: block
+  color: #aaaaaa
+  text-decoration: none
+  +border-radius(100px)
+  +box-shadow
+  +linear-gradient(color-stops(white, #dddddd), left top)
+  +text-shadow(white)
+  &:hover
+    text-decoration: underline
+
+span.lbl
+  font-size: 25px
+  margin: 30px auto
+  width: 100px
+  text-align: center
+  display: block
+
+a
+  &.a
+    background-color: #c0a00f
+  &.b
+    background-color: #f000ff
+  &.c
+    background-color: #00c0ff
+  &.d
+    background-color: #000aff
+  &.e
+    background-color: #c000ff
+  &.f
+    background-color: #a000ff
+
+div
+  &.top
+    background-image:url('images/paper_top.png');
+    margin: 0px auto
+    width: 600px
+    height: 200px
+  &.bottom
+    background-image:url('images/paper_bottom.png');
+    margin: 0px auto
+    width: 600px
+    height: 200px

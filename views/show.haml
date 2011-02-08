@@ -1,0 +1,10 @@
+%table
+  %thead
+    %tr
+      %th Key 
+      %th Value
+  %tbody
+    - @posts.each do |post|
+      %tr
+        %td= post.title
+        %td= post.id
